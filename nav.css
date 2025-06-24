@@ -1,0 +1,199 @@
+/* nav - menubar styles starts */
+.menubar{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    margin: 0 auto;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 95%;
+    height: 50px;
+    margin: 10px auto;
+    transition: all 0.35s ease;
+}
+
+.menuLogo{
+    justify-content: left;
+    align-items: center;    
+    height: 46px;
+    padding: 15px 10px 10px 10px;
+}
+
+.menuUL{
+    display: flex;
+}
+
+.menuUL a{
+    padding: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.menuUL a:hover{
+    scale: 1.056;    
+}
+
+.search{
+    position: relative;
+    right: 10px;
+}
+
+.search_icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);  
+}
+
+.searchMenu{
+    justify-content: flex-end;
+    padding: 5px 5px 5px 15px; 
+    font-size: 15px;
+    border-radius: 20px;
+    border: .2px solid black;
+}
+
+.right-end {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes it to the right */
+}
+
+.close-sidebar-button,
+.open-sidebar-button{
+    margin-left: auto;
+    padding: 10px 13px;
+    font-size: 15px;
+    border-radius: 10%;
+    background-color: #ffffff;
+    color: red;
+    font-size: 18px;
+    border: none;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button{
+    display: none;
+}
+
+.sticky-element {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: 999;
+} 
+
+.close-sidebar-button{
+    display: none;
+}
+
+/* making it responvie for phone or smaller display  */ 
+@media screen and (max-width: 950px) {
+    .menuUL a:hover{
+        background-color: rgba(0, 0, 0, .60);
+        color: white;
+    }
+    .menubar{
+        backdrop-filter: blur(0px);
+        border: none;
+    }
+
+
+    .menuUL{
+        display: none;
+
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: -10px;
+        
+        width: 40%;
+        height: 100vh;
+        z-index: 100;        
+                
+        padding-top: 32px;
+        overflow-y: hidden;
+       
+        background: rgba(2, 0, 0, 0.74);
+        box-shadow: -5px 0 5px rgba(48, 48, 48, 0.23); 
+    }
+
+    .menuUL a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+        border-radius: 0;
+        display: flex;
+    }
+    
+    .search{
+        display: none;
+    }
+    
+    .close-sidebar-button{
+        padding: 10px 15px;
+        font-size: 21px;
+        margin: -20px 10px 10px auto;
+        background-color: red;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .close-sidebar-button,
+    .open-sidebar-button {
+        display: block;
+    }
+    
+    /* Change hamburger to X when menu is open */
+    #sidebar-active:checked ~ .right-end .open-sidebar-button i:before {
+        content: "\f00d"; /* fa-xmark unicode */
+    }
+    
+    /* When checkbox is checked, show the menu */
+    #sidebar-active:checked ~ .menuUL {
+        display: flex;
+        right: 0;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .menuUL {
+        width: 70%;
+        overflow-x: hidden;
+    }
+    
+    .searchMenu {
+        width: 100px;
+    }
+    
+    .menubar {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menuUL {
+        width: 80%;
+    }
+    
+    .search {
+        padding: 6px 12px;
+    }
+    
+    .searchMenu {
+        width: 80px;
+    }
+}
+/* nav - menubar styles ends */
