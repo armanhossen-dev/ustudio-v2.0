@@ -1,62 +1,79 @@
 /* nav - menubar styles starts */
-.menubar{
+.menubar {
     display: flex;
     align-items: center;
-    padding-left: 5px;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 15px;
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    width: 95%;
+    width: 90%;
     height: 50px;
     margin: 10px auto;
     transition: all 0.35s ease;
+}
+
+.menuUL {
+    display: flex;
+    gap: 15px; 
+    margin-left: auto; 
+    align-items: center;
+}
+
+.menuUL a {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.menuUL a:hover {
+    scale: 1.086;
+    color: rgba(255, 0, 0, 0.87);
 }
 
 .menuLogo{
     justify-content: left;
     align-items: center;    
     height: 46px;
-    padding: 15px 10px 10px 10px;
+    padding: 15px 0px 10px 0px;
 }
 
-.menuUL{
+.right-end {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.menuUL a{
-    padding: 20px;
-    font-size: 15px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: all .2s ease;
+/* Hide sidebar checkbox */
+#sidebar-active {
+    display: none;
 }
 
-.menuUL a:hover{
-    scale: 1.056;    
-}
 
 .search{
-    position: relative;
-    right: 10px;
+    /* position: relative;
+    right: 10px; */
+    width: 150px;
 }
 
-.search_icon{
+/* .search_icon{
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);  
-}
+} */
 
-.searchMenu{
+/* .searchMenu{
     justify-content: flex-end;
     padding: 5px 5px 5px 15px; 
     font-size: 15px;
     border-radius: 20px;
     border: .2px solid black;
-}
+} */
 
 .right-end {
     display: flex;
@@ -108,23 +125,19 @@
         border: none;
     }
 
-
     .menuUL{
         display: none;
-
         flex-direction: column;
         align-items: flex-start;
         position: absolute;
         top: -10px;
-        
         width: 40%;
         height: 100vh;
-        z-index: 100;        
-                
+        z-index: 100;                        
         padding-top: 32px;
         overflow-y: hidden;
        
-        background: rgba(2, 0, 0, 0.74);
+        background: rgba(36, 35, 35, 0.74);
         box-shadow: -5px 0 5px rgba(48, 48, 48, 0.23); 
     }
 
