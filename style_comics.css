@@ -10,9 +10,12 @@ html{
     
     font-family: "Outfit", sans-serif;
 }
-
 body{
-    background-color: black;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
 }
 .comics{
     padding-top: 50px;
