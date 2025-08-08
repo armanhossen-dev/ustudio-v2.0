@@ -131,11 +131,11 @@ footer .row {
 }
 
 .p-list a:hover, .l-list a:hover {
-  color: #a8e6cf;
+  color: #e82424;
   transform: translateX(5px);
 }
 
-.l-list a.acti {
+a.acti {
   color: #ff0000;
   font-weight: 600;
 }
@@ -290,5 +290,3 @@ html {
     transform: translateY(0);
   }
 }
-
-
