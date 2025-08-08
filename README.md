@@ -3,7 +3,7 @@
 A modern, interactive comic book marketplace built for **UnlockStudio**, featuring popular series like **Agent-Z** and **Silverstone**. Users can browse, preview, and purchase comics in a smooth, mobile-friendly experience.  
 
 ![](https://github.com/2NCE3/ustudio-v2.0/blob/main/images/home1.png) <br>
-![](https://github.com/2NCE3/ustudio-v2.0/blob/main/images/home2.png) <br>
+![](https://github.com/2NCE3/ustudio-v2.0/blob/main/images/h2.png) <br>
 ![](https://github.com/2NCE3/ustudio-v2.0/blob/main/images/home3.png)
 
 
