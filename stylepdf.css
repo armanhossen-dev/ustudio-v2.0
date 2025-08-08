@@ -93,6 +93,9 @@ body{
     .pdfstyle{
         height: 87vh; 
     }
+    .pdfstyle-agentZ{
+        height: 87vh; 
+    }
 }
 
 .pdfstyle {
@@ -109,11 +112,12 @@ body{
 }
 
 .pdfstyle-agentZ{
+    margin-top: 65px;
     width: 100%; 
-    height: 87vh; 
+    height: 92vh; 
     border: none; 
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 27%;
+    padding-right: 27%;
     background-image: url('images/image\ 333.png');
     background-position: center;
     background-size: cover;
