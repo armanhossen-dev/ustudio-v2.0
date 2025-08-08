@@ -41,7 +41,7 @@ footer .row {
 @media (max-width: 768px) {
   footer .row {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 
